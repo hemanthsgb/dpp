@@ -1,0 +1,25 @@
+name: Run Node.js Script Every 10 Minutes
+
+on:
+  schedule:
+    - cron: "*/10 * * * *" # Runs every 10 minutes
+  workflow_dispatch: # Optional, to trigger manually
+
+jobs:
+  run-node-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18 # Use your Node.js version
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run Script
+        run: node app.js
