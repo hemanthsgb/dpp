@@ -6,7 +6,7 @@ const ACCESS_TOKEN = process.env.ACCESS_TOKEN;
 
 // Define product tags, API URLs, and pricing formulas
 const PRODUCTS = [
-    { tag: "gld", apiUrl: "https://api.gold-api.com/price/XAU", formula: (price) => price * 1.8 + 10 },
+    { tag: "gld", apiUrl: "https://api.gold-api.com/price/XAU", formula: (price) => price * 1.2 + 10 },
     { tag: "slvr", apiUrl: "https://api.gold-api.com/price/XAG", formula: (price) => price * 1.9 + 5 }
 ];
 
