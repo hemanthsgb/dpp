@@ -38,9 +38,9 @@ const PRODUCTS = [
     { tags: ["gld", "pamp", "bar", "10 oz"], priceType: "gold", formula: (price) => price * 10.0 * 1.03 },
     { tags: ["gld", "johnson", "bar", "10 oz"], priceType: "gold", formula: (price) => price * 10.0 * 1.03 },
     { tags: ["gld", "royal canadian", "bar", "1 kilo"], priceType: "gold", formula: (price) => price * 35.274 * 1.03 },
-    { tags: ["gld", "johnson", "bar", "1 kilo"], priceType: "gold", formula: (price) => price * 35.274 * 1.03 },
-    { tags: ["gld", "Perth", "bar", "1 kilo"], priceType: "gold", formula: (price) => price * 35.274 * 1.03 },
-    { tags: ["gld", "Valcambi", "bar", "1 kilo"], priceType: "gold", formula: (price) => price * 35.274 * 1.03 },
+    { tags: ["gld", "johnson", "bar", "1 kilo"], priceType: "gold", formula: (price) => price * 32.15 * 1.03 },
+    { tags: ["gld", "Perth", "bar", "1 kilo"], priceType: "gold", formula: (price) => price * 32.15 * 1.03 },
+    { tags: ["gld", "Valcambi", "bar", "1 kilo"], priceType: "gold", formula: (price) => price * 32.15 * 1.03 },
     { tags: ["gld", "pamp", "bar", "1 gram"], priceType: "gold", formula: (price) => price * 0.035 * 1.03 },
     { tags: ["gld", "Perth", "bar", "1 gram"], priceType: "gold", formula: (price) => price * 0.035 * 1.03 },
     { tags: ["gld", "Argor", "bar", "1 gram"], priceType: "gold", formula: (price) => price * 0.035 * 1.03 },
@@ -159,3 +159,4 @@ async function updatePrices() {
 
 // Run the script
 updatePrices();
+
