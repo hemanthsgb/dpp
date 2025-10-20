@@ -55,7 +55,9 @@ const PRODUCTS = [
     { tags: ["gld", "pamp", "bar", "100 gram"], priceType: "gold", formula: (price) => price * 3.5 * 1.03 },
     { tags: ["gld", "pamp", "bar", "20 gram"], priceType: "gold", formula: (price) => price * 0.705 * 1.03 },
     { tags: ["gld", "Perth", "bar", "5 gram"], priceType: "gold", formula: (price) => price * 0.176 * 1.03 },
-    { tags: ["slvr", "coin", "brtn", "1 oz"], priceType: "silver", formula: (price) => price * 1.25 }
+    { tags: ["slvr", "coin", "1 oz"], priceType: "silver", formula: (price) => price * 1.25 },
+     { tags: ["slvr", "bar", "10 oz"], priceType: "silver", formula: (price) => price * 1.25 * 10 }.
+    
 ];
 
 async function getMetalPrices() {
@@ -159,6 +161,7 @@ async function updatePrices() {
 
 // Run the script
 updatePrices();
+
 
 
 
